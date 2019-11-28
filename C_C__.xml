@@ -1,0 +1,7 @@
+<templateSet group="C/C++">
+  <template name="modpow" value="ll mod_pow(ll x, ll n) {&#10;    ll a = 1;&#10;    while (n) {&#10;        if (n%2) a = a*x%INF;&#10;        x = x*x%INF;&#10;        n/=2;&#10;    }&#10;    return a;&#10;}" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="cpp" value="true" />
+    </context>
+  </template>
+</templateSet>
